@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Blooms - Slideshow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FEE4D6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container {
+    background-color: #F9C6B3;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+nav a {
+    color: #D04B3A;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 0.875rem;
+}
+.header {
+    font-family: 'Playfair Display', serif;
+    color: #D04B3A;
+    font-size: 1.75rem;
+    margin: 30px 0;
+    text-align: center;
+}
+.description {
+    color: #6B4B4A;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: fit-content;
+    height: fit-content; 
+    margin: auto;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slideshow-container img, .slideshow-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mySlides {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.text {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.cta-button {
+    background-color: #D04B3A;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #A83B2E;
+}
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .header {
+        font-size: 1.4rem;
+    }
+    .slideshow-container {
+        height: 350px;
+    }
+    .prev, .next {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .cta-button{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .header {
+        font-size: 1.4rem;
+    }
+    .slideshow-container {
+        height: 200px;
+    }
+    .prev, .next {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .text {
+        font-size: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">60 Reasons Why I Love You Okoma❤</h1>
+
+        <nav>
+            <a href="page1.html">Home</a>
+            <a href="page3.html">Reasons</a>
+            <a href="page5.html">Gallery</a>
+        </nav>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="/WhatsApp Image 2024-08-15 at 14.11.26_79795fb7.jpg" alt="Image 1">
+                <div class="text">Always troubling me</div>
+            </div>
+            <div class="mySlides">
+                <video src="/WhatsApp Video 2024-08-15 at 14.11.26_84eebd92.mp4" muted></video>
+                <div class="text">Memories</div>
+            </div>
+            <div class="mySlides">
+                <img src="/WhatsApp Image 2024-08-15 at 14.11.35_766f7191.jpg" alt="Image 2">
+                <div class="text">I love you</div>
+            </div>
+            <div class="mySlides">
+                <video src="/WhatsApp Video 2024-08-15 at 14.12.38_7ea9ded6.mp4" muted></video>
+                <div class="text">The joy of our adventures</div>
+            </div>
+
+            <div class="mySlides">
+                <video src="/WhatsApp Video 2024-08-15 at 14.11.49_6f57e908.mp4" muted></video>
+                <div class="text">My favorite video of you</div>
+            </div>
+            <div class="mySlides">
+                <img src="/WhatsApp Image 2024-08-15 at 14.11.36_28720cda.jpg" alt="Image 2">
+                <div class="text">Celebrating together</div>
+            </div>
+            <div class="mySlides">
+                <img src="/WhatsApp Image 2024-08-15 at 14.11.36_ef68fc00.jpg" alt="Image 2">
+                <div class="text">The way you look at me</div>
+            </div>
+            <div class="mySlides">
+                <img src="/WhatsApp Image 2024-08-15 at 14.11.55_d66d398a.jpg" alt="Image 2">
+                <div class="text">My favorite chat</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="button-group">
+            <button class="cta-button" onclick="location='page4.html'">Previous Page</button>
+            <button class="cta-button" onclick="location='page6.html'">Next Page</button>
+
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.mySlides');
+        const slideDuration = 5000; 
+        let slideTimeout;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+                if (slide.querySelector('video')) {
+                    const video = slide.querySelector('video');
+                    if (i === index) {
+                        video.play();
+                    } else {
+                        video.pause();
+                        video.currentTime = 0;
+                    }
+                }
+            });
+        }
+
+        function plusSlides(n) {
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            showSlide(slideIndex);
+            clearTimeout(slideTimeout);
+            slideTimeout = setTimeout(() => plusSlides(1), slideDuration);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(slideIndex);
+            slideTimeout = setTimeout(() => plusSlides(1), slideDuration);
+        });
+    </script>
+</body>
+</html>
